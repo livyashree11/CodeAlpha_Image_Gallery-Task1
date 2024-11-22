@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Title Heading -->
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <div class="thumbnail" onclick="openLightbox(0)">
+            <img src="images/image1.jpg" alt="Image 1">
+            <figcaption>Dog</figcaption>
+        </div>
+        <div class="thumbnail" onclick="openLightbox(1)">
+            <img src="images/image2.jpg" alt="Image 2">
+            <figcaption>Tree</figcaption>
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="images/image3.jpg" alt="Image 3">
+            <figcaption>Flower</figcaption>
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="images/image4.jpg" alt="Image 4">
+            <figcaption>Mountain</figcaption>
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="images/image5.jpg" alt="Image 5">
+            <figcaption>Moon</figcaption>
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="images/image6.jpg" alt="Image 6">
+            <figcaption>Beach</figcaption>
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="images/image7.jpg" alt="Image 7">
+            <figcaption>Forests</figcaption>
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="images/image8.jpg" alt="Image 8">
+            <figcaption>sunrises</figcaption>
+        </div>
+        <!-- Add more thumbnails as needed -->
+    </div>
+    
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-image" id="lightbox-image" src="" alt="Lightbox Image">
+        <div class="caption" id="lightbox-caption"></div>
+        <div class="nav">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+      
